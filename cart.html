@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GH MarketPlace - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+      <link favicon rel="icon" href="logo1.jpg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><i class="fas fa-shopping-basket"></i> GH MarketPlace</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="section-title">Your Cart</h2>
+    <div class="cart-container" style="max-width: 800px; margin: 0 auto; padding: 1rem;">
+        <div class="cart-item" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #eee;">
+            <img src="https://via.placeholder.com/80" alt="Organic Apples" style="width: 80px; height: 80px; object-fit: cover;">
+            <div style="flex-grow: 1; padding: 0 1rem;">
+                <h3>Organic Apples</h3>
+                <p class="price">$2.99/kg</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <button style="padding: 0.3rem 0.6rem; background: #f0f0f0; border: none; cursor: pointer;">-</button>
+                <span>2</span>
+                <button style="padding: 0.3rem 0.6rem; background: #f0f0f0; border: none; cursor: pointer;">+</button>
+            </div>
+            <p class="price" style="font-weight: bold;">$5.98</p>
+            <button style="background: none; border: none; cursor: pointer; color: #ff5252;"><i class="fas fa-trash"></i></button>
+        </div>
+    </div>
+
+    <div class="cart-summary" style="max-width: 800px; margin: 2rem auto; padding: 1rem; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <h3>Order Summary</h3>
+        <div style="display: flex; justify-content: space-between; margin: 1rem 0;">
+            <p>Subtotal:</p>
+            <p>$5.98</p>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 1rem 0;">
+            <p>Delivery:</p>
+            <p>$2.00</p>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 1rem 0; font-weight: bold;">
+            <p>Total:</p>
+            <p>$7.98</p>
+        </div>
+        <button class="btn" style="width: 100%; padding: 1rem; font-size: 1.1rem;">Proceed to Checkout</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 GH MarketPlace. All rights reserved.</p>
+    </footer>
+    <script src="js/cart.js"></script>         
+    <script src="js/orders.js"></script>       
+    <script src="js/main.js"></script>         
+    <script src="js/auth.js"></script>         
+</body>
+</html>
